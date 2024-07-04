@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Play</title>
+    <link rel="stylesheet" href="../static/css/play.css">
+    <link rel="stylesheet" href="../static/css/center.css">
+    
+</head>
+
+
+<body>
+    <header>
+        
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Thapar_Institute_of_Engineering_and_Technology_University_logo.png" alt="Try Reloading">
+                    <li><a href="{{ url_for('index' )}}">Home</a></li>
+                    <li class="play"><a href="{{ url_for('play' )}}">How To Play</a></li>
+                    <li><a href="{{ url_for('about' )}}">About Us</a></li>
+                    
+                </ul>
+            </nav>
+            <h1 id="heading">SUDOKU SOLVER</h1>
+
+        </div>
+    </header>
+    <section>
+        <h2>The Rules of Sudoku:</h2>
+        <ul>
+            <li class="img1">
+               <p>
+                   Each row must contain the numbers 1-9 exactly once each.
+                   
+            </p> 
+                <img src="https://i0.wp.com/masteringsudoku.com/wp-content/uploads/2022/11/how-to-play-sudoku-rule-1-each-row-contains-numbers-1-9.png?w=394&ssl=1" alt="">
+            </li>
+            <li class="img2">
+               <p>
+                   Each column must contain the numbers 1-9 exactly once each.
+
+               </p> 
+                <img src="https://i0.wp.com/masteringsudoku.com/wp-content/uploads/2022/11/how-to-play-sudoku-rule-2-each-column-contains-numbers-1-9.png?w=392&ssl=1" alt="">
+            </li>
+            <li class="img3">
+               <p>
+
+                Each 3*3 box must contain the numbers 1-9 exactly once each.
+               </p>
+                <img src="https://i0.wp.com/masteringsudoku.com/wp-content/uploads/2022/11/how-to-play-sudoku-rule-3-each-3x3-box-contains-numbers-1-9.png?w=392&ssl=1" alt="">
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

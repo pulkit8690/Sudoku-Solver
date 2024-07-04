@@ -1,0 +1,140 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9, 50px);
+    gap: 0px;
+    padding: 0px;
+    background-color: #fff;
+  }
+  body{
+    background-color: #f9eded;
+  }
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    /* border: 1px solid #000000; */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .grid-item-right {
+    border-right: 2px solid rgb(2, 2, 2);
+  }
+  
+  .grid-item-bottom {
+    border-bottom: 2px solid rgb(6, 6, 6);
+  }
+  
+  .grid-item:nth-child(-n+9) {
+    border-top: 2px solid black;
+  }
+
+  .grid-item:nth-child(9n+1) {
+    border-left: 2px solid black;
+  }
+
+  .grid-item:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .txt-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+header h1{
+  text-decoration: underline;
+}
+
+   
+    
+
+.navbar{
+    background-color: antiquewhite;
+    /* border: 3px dotted red; */
+    width: 100%;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 3px 30px;
+    
+    padding: 15px 0px;
+    align-items: center;
+}
+.navbar ul img{
+    width: 75px;
+    height: 75px;
+    margin: -12px 21px;
+}
+.navbar ul li a{
+    display: block;
+    padding: 2px 25px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius:8px;
+    color:blue;
+    font-weight: bolder;
+    
+  
+}
+.navbar ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 14px;
+}
+#heading{
+    text-align: center;
+    font-size: 44px;
+    margin: 7px;
+}
+#para1{
+    text-align: center;
+    font-size: 20px;
+}
+section{
+    
+    margin: 45px;
+    text-align: center;
+    font-size: 27px;
+    border: 2px solid red;
+    background-color: antiquewhite
+}
+section p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .btn{
+    font-size: 1.75rem;
+    margin: 12px 12px;
+    cursor: pointer;
+    list-style: none;
+    padding: 4px 4px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+section .btn:hover{
+    background-color: rgb(215, 207, 207);
+    
+    
+}
+
+header img{
+  display: block;
+  margin: 24px 642px;
+  height: 168px;
+}

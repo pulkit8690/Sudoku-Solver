@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invalid</title>
+    <link rel="stylesheet" href="../static/css/return.css">
+    <link rel="stylesheet" href="../static/css/center.css">
+</head>
+<body>
+    <header>
+        
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Thapar_Institute_of_Engineering_and_Technology_University_logo.png" alt="Try Reloading">
+                    <li class="index"><a href="{{ url_for('index' )}}" >Home</a></li>
+                    <li><a href="{{ url_for('play' )}}">How To Play</a></li>
+                    <li><a href="{{ url_for('about' )}}">About Us</a></li>
+                    
+                </ul>
+            </nav>
+            <h1 id="heading">SUDOKU SOLVER</h1>
+            <img src="https://cdn-eaebb.nitrocdn.com/QvzDcOKmPZNTGhotvWgVpUsyPfCTqwim/assets/images/optimized/rev-4170a50/uploads/2013/12/Opps.jpg" alt="">
+        </div>
+    </header>
+    <section>
+        <p>Oops!! You entered a wrong input</p>
+        <p>To Return back to the grid.</p>
+        <p>Press Return</p>
+        <button class="btn"><a href="{{ url_for('index' )}}">Return</a></button>
+    </section>
+</body>
+</html>
